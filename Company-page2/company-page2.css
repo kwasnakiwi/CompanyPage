@@ -68,7 +68,7 @@ body{
         transform: translateX(-40%);
     }
     80%{
-        transform: translateX(2.5%);
+        transform: translateX(0.5%);
     }
     100%{
         transform: translateX(0);
@@ -79,7 +79,7 @@ body{
         transform: translateX(40%);
     }
     80%{
-        transform: translateX(-2.5%);
+        transform: translateX(-0.5%);
     }
     100%{
         transform: translateX(0);
@@ -343,30 +343,31 @@ body{
 .plans-container{
    display: flex;
    text-align: center;
-   gap: 20px;
-   padding: 0 5%;
-   margin-top: 500px;
+   gap: 100px;
+   padding: 0 17%;
+   margin-top: 150px;
 }
 .plan{
     background-color: rgba(253, 239, 113, 0.21);
+    max-width: 400px;
 }
 .plan-worth1{
     text-decoration: line-through black 6px;
     color: red;
     font-family: Roboto Slab;
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 500;
     margin: 0;
 }
 .plan-worth2{
     font-family: Roboto Slab;
-    font-size: 82px;
+    font-size: 70px;
     font-weight: 500;
     margin: 0;
 }
 .plan-number{
     font-family: Roboto Slab;
-    font-size: 52px;
+    font-size: 42px;
     font-weight: 500;
 }
 .plan-list{
@@ -375,13 +376,13 @@ body{
 }
 .plan-list-line{
     font-family: Josefin Sans;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 400;
     padding-bottom: 15px;
 }
 .plan-button{
     font-family: Teko;
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 400;
     padding: 1px 19px;
     background-color: #000001;
@@ -410,7 +411,20 @@ body{
 .show2{
     opacity: 1;
 }
+.plan img{
+    max-width: 400px;
+}
 /*contact*/
+input[type="text"] {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+input[type="email"] {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+    
 .form_form{
 display: flex;
 flex-direction: column;
@@ -420,6 +434,8 @@ margin-top: -20px;
 }
 #form_textarea{
   height: 110px;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
 }
 #form_textarea::placeholder{
   text-align: left;
