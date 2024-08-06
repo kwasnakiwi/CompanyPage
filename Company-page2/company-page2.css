@@ -345,6 +345,7 @@ body{
    text-align: center;
    gap: 20px;
    padding: 0 5%;
+   margin-top: 100px;
 }
 .plan{
     background-color: rgba(253, 239, 113, 0.21);
