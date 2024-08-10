@@ -50,6 +50,36 @@ body{
     margin: 0;
     background-color: #F8F8F8;
 }
+.logo{
+    width: 230px;
+    height: 102px;
+}
+.navbar{
+    background-color: black;
+    height: 102px;
+    display: flex;
+}
+.navButtons{
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+.navBtn{
+    color: white;
+    font-family: Saira Condensed;
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 20px;
+    width: 186.09px;
+    height: 57px;
+    text-align: center;
+}
+.navBtnRed{
+    background-color: red;
+    padding: 22.5px 10px;
+    margin: 0;
+    border-radius: 25px;
+}
 .title{
     font-family: Roboto Slab;
     font-size: 60px;

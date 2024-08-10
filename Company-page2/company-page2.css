@@ -17,7 +17,7 @@
 body{
     margin: 0;
     background-color: #F8F8F8;
-    ;
+    
 }
 /*animations*/
 @keyframes slideInLeft{
@@ -57,7 +57,7 @@ body{
 }
 @keyframes lineLong2 {
     to{
-        width: 1514px;
+        max-width: 1514px;
     }
 }
 @keyframes slideLeftBounce {
@@ -81,6 +81,37 @@ body{
     100%{
         transform: translateX(0);
     }
+}
+/* navbar */
+.logo{
+    width: 230px;
+    height: 102px;
+}
+.navbar{
+    background-color: black;
+    height: 102px;
+    display: flex;
+}
+.navButtons{
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+}
+.navBtn{
+    color: white;
+    font-family: Saira Condensed;
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 20px;
+    width: 186.09px;
+    height: 57px;
+    text-align: center;
+}
+.navBtnRed{
+    background-color: red;
+    padding: 22.5px 10px;
+    margin: 0;
+    border-radius: 25px;
 }
 /* section 1 */
 
@@ -620,13 +651,9 @@ margin-top: 30px;
     }
     
 }
-
 @media (max-width: 1130px) {
     .offers{
         text-align: center;
-    }
-    .projects-image{
-        visibility: hidden;
     }
 }
 @media (max-width: 1020px) {
