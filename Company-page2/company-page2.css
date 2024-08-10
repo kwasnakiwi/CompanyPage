@@ -56,11 +56,8 @@ body{
     }
 }
 @keyframes lineLong2 {
-    from{
-        width: 10px;
-    }
     to{
-        max-width: 1514px;
+        width: 1514px;
     }
 }
 @keyframes slideLeftBounce {
@@ -238,7 +235,7 @@ body{
     margin-bottom: 0;
 }
 .line3{
-    width: 1514px;
+    width: 10px;
     text-align: left;
     margin-left: 0;
     margin-top: 5px;
@@ -246,6 +243,7 @@ body{
     border-top: 2px;
     animation: lineLong2;
     animation-timeline: view();
+    animation-range-start: 250px;
 }
 .projects{
     margin-left: 10%;
@@ -415,16 +413,14 @@ body{
     max-width: 400px;
 }
 /*contact*/
-input[type="text"] {
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
+textarea {
+    scrollbar-width: none; /* Dla Firefox */
+    -ms-overflow-style: none; /* Dla Internet Explorer i Edge */
 }
 
-input[type="email"] {
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
+textarea::-webkit-scrollbar { 
+    display: none; /* Dla Chrome, Safari i Opera */
 }
-    
 .form_form{
 display: flex;
 flex-direction: column;
@@ -458,6 +454,9 @@ margin-top: -20px;
   font-size: 12px;
   font-weight: 400;
   border-color: black;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  
 }
 .web-bottom-text-content{
     font-family: Yanone Kaffeesatz;
@@ -614,9 +613,6 @@ margin-top: -20px;
     #form_textarea{
         height: 150px;
     }
-@media (max-width: 1330px) {
-
-}
 @media (max-width: 1400px) {
     .offers{
         grid-template-columns: 1fr 1fr;
@@ -627,6 +623,9 @@ margin-top: -20px;
 @media (max-width: 1130px) {
     .offers{
         text-align: center;
+    }
+    .projects-image{
+        visibility: hidden;
     }
 }
 @media (max-width: 1020px) {
