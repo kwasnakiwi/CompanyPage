@@ -413,14 +413,6 @@ body{
     max-width: 400px;
 }
 /*contact*/
-textarea {
-    scrollbar-width: none; /* Dla Firefox */
-    -ms-overflow-style: none; /* Dla Internet Explorer i Edge */
-}
-
-textarea::-webkit-scrollbar { 
-    display: none; /* Dla Chrome, Safari i Opera */
-}
 .form_form{
 display: flex;
 flex-direction: column;
@@ -429,15 +421,21 @@ margin-right: 5%;
 margin-top: -20px;
 }
 #form_textarea{
-  height: 110px;
   font-size: 20px;
   font-family: "Inter", sans-serif;
+  box-sizing: border-box; /* Upewnia się, że padding nie zwiększy rozmiaru inputu */
+  padding-bottom: 120px;
 }
+
 #form_textarea::placeholder{
   text-align: left;
   vertical-align: top;
   font-family: "Inter", sans-serif;
-}
+  position: absolute;
+  top: 5px;    /* Dopasowuje do padding-top */
+  left: 5px;   /* Dopasowuje do padding-left */
+  transform: translate(0, 0); /* Zapewnia prawid*/
+  }
 .info::placeholder{
   font-family: "Inter", sans-serif;
 }
@@ -456,8 +454,8 @@ margin-top: -20px;
   border-color: black;
   font-size: 20px;
   font-family: "Inter", sans-serif;
-  
 }
+
 .web-bottom-text-content{
     font-family: Yanone Kaffeesatz;
     font-size: 48px;
@@ -481,6 +479,7 @@ margin-top: -20px;
 }
 .web-bottom-text{
     max-width: 740px;
+    margin: 0;
 }
 .form{
     min-width: 750px;
