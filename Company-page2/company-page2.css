@@ -632,6 +632,9 @@ margin-top: 30px;
         display: block;
         text-align: center;
     }
+    .image-n-title1{
+        display: none;
+    }
 }
 @media (max-width: 1500px) {
     .web-top{
