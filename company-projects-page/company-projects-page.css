@@ -119,6 +119,9 @@ body{
     padding: 11px 50px;
     background-color: rgba(217, 217, 217, 1);
 }
+.text-overlay{
+    margin: 0 15%;
+}
 .text-overlay-line{
     max-width: 800px;
     color: black;
