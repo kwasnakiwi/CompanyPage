@@ -2,6 +2,9 @@ body{
     margin: 0;
     background-color: #F8F8F8;
 }
+.center-container{
+    margin-top: 150px;
+}
 .logo{
     width: 230px;
     height: 102px;
@@ -10,6 +13,11 @@ body{
     background-color: black;
     height: 102px;
     display: flex;
+    position: fixed;
+    top: 0;
+    margin-bottom: 50px;
+    width: 100%;
+    z-index: 1000;
 }
 .navButtons{
     display: flex;

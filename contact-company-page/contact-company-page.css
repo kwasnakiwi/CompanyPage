@@ -13,6 +13,9 @@ body{
     margin: 0;
     background-color: #F8F8F8;
 }
+.center-container{
+    margin-top: 150px;
+}
 .logo{
     width: 230px;
     height: 102px;
@@ -21,6 +24,11 @@ body{
     background-color: black;
     height: 102px;
     display: flex;
+    position: fixed;
+    top: 0;
+    margin-bottom: 150px;
+    width: 100%;
+    z-index: 1000;
 }
 .navButtons{
     display: flex;
@@ -99,17 +107,26 @@ body{
       font-family: "Inter", sans-serif;
       box-sizing: border-box; /* Upewnia się, że padding nie zwiększy rozmiaru inputu */
       padding-bottom: 120px;
+      overflow: hidden;
+      border-top:  solid 2px gray;
+      border-left: solid 2px gray;
+      border-bottom:  solid 2px gray;
+      border-right: solid 2px gray;
     }
-    
+    #form_textarea:focus{
+        border: solid 2px black;
+      }
+      .info:focus{
+        border-bottom: solid 2px black;
+        border-top: solid 2px black;
+        border-left: solid 2px black;
+        border-right: solid 2px black;
+      }
     #form_textarea::placeholder{
       text-align: left;
       vertical-align: top;
       font-family: "Inter", sans-serif;
-      position: absolute;
-      top: 5px;    /* Dopasowuje do padding-top */
-      left: 5px;   /* Dopasowuje do padding-left */
-      transform: translate(0, 0); /* Zapewnia prawid*/
-      }
+    }
     .info::placeholder{
       font-family: "Inter", sans-serif;
     }
@@ -125,9 +142,11 @@ body{
       box-sizing: border-box;
       font-size: 12px;
       font-weight: 400;
-      border-color: black;
-      font-size: 20px;
-      font-family: "Inter", sans-serif;
+      border-top:  solid 2px gray;
+     border-left: solid 2px gray;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    outline: none;
       min-width: 600px;
     }
 .web-middle{

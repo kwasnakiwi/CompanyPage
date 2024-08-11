@@ -46,6 +46,9 @@ body{
     margin: 0;
     background-color: #F8F8F8;
 }
+.center-container{
+    margin-top: 150px;
+}
 .logo{
     width: 230px;
     height: 102px;
@@ -54,6 +57,11 @@ body{
     background-color: black;
     height: 102px;
     display: flex;
+    position: fixed;
+    top: 0;
+    margin-bottom: 150px;
+    width: 100%;
+    z-index: 1000;
 }
 .navButtons{
     display: flex;
@@ -116,7 +124,7 @@ body{
     background-color: rgba(217, 217, 217, 1);
 }
 .text-overlay{
-    width: 100%;
+    margin: 0 15%;
 }
 .text-overlay-line{
     max-width: 800px;
@@ -125,7 +133,7 @@ body{
 }
 .image-container {
     position: relative;
-    width: 600px;
+    width: 1000px;
     margin: 0 auto;
   }
 .image-container .text-overlay{
@@ -135,9 +143,8 @@ body{
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 24px;
     opacity: 0;
-    transition: 0.3s ease; /* Płynne pojawienie napisu */
+    transition: opacity 0.3s ease; /* Płynne pojawienie napisu */
 }
 .image-container:hover img {
   filter: blur(12px); /* Stopień rozmycia zdjęcia */
@@ -152,13 +159,13 @@ body{
 }
 .text-overlay h3{
     font-family: Roboto Slab;
-    font-size: 45px;
+    font-size: 42px;
     margin-bottom: 0;
 }
 .text-overlay p{
     font-family: Josefin Sans;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 22px;
     text-align: left;
     margin-bottom: 0;
     margin-top: 20px;
@@ -231,7 +238,7 @@ body{
         margin: 0 15%;
     }
     .image-container{
-        width: 500px;
+        width: 700px;
         height: 280px;
     }
     .text-overlay h3{
