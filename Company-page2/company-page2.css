@@ -112,6 +112,7 @@ body{
     width: 186.09px;
     height: 57px;
     text-align: center;
+    text-decoration: none;
 }
 .navBtnRed{
     background-color: red;
@@ -389,14 +390,16 @@ body{
 /*plans*/
 .plans-container{
    display: flex;
-   text-align: center;
+   justify-content: center;
    gap: 5px;
-   padding: 0 17%;
+   margin: 0 12%;
    margin-top: 150px;
 }
 .plan{
     background-color: rgba(253, 239, 113, 0.21);
     max-width: 400px;
+    text-align: center;
+    margin: 0;
 }
 .plan-worth1{
     text-decoration: line-through black 6px;
@@ -586,11 +589,6 @@ margin-top: 30px;
 }
 
 /*media*/
-@media (max-width: 1900px) {
-    .plans-container{
-        gap: 5px;
-    }
-}
 @media (max-width: 1850px) {
     .plans-container{
         margin-left: 2%;
@@ -598,15 +596,10 @@ margin-top: 30px;
     }
 }
 @media (max-width: 1750px) {
-    .plans-container{
-        display: block;
-        text-align: center;
-    }
+    
     .plan{
         width: 561.88px;
         margin-bottom: 50px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 @media (max-width: 1735px) {
@@ -642,6 +635,7 @@ margin-top: 30px;
         display: block;
         text-align: center;
     }
+
 }
 @media (max-width: 1480px) {
     .web-bottom{
@@ -675,16 +669,26 @@ margin-top: 30px;
     }
     
 }
+@media (max-width: 1300px) {
+    .plans-container{
+        display: block;
+        text-align: center;
+    }
+    .plan{
+        margin: 15px auto;
+    }
+}
 @media (max-width: 1130px) {
     .offers{
         text-align: center;
     }
     .name{
-        font-size: 30px;
+        font-size: 34px;
     }
     .under-name{
-        font-size: 18px;
+        font-size: 22px;
     }
+
 }
 @media (max-width: 1020px) {
     .text-n-line{
